@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../models/restaurant.dart';
 
 class RestaurantLandscapeCard extends StatelessWidget {
@@ -11,7 +12,6 @@ class RestaurantLandscapeCard extends StatelessWidget {
     final textTheme = Theme.of(
       context,
     ).textTheme.apply(displayColor: Theme.of(context).colorScheme.onSurface);
-
     return Card(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -33,6 +33,7 @@ class RestaurantLandscapeCard extends StatelessWidget {
               style: textTheme.bodySmall,
             ),
             onTap: () {
+              // ignore: avoid_print
               print('Tap on ${restaurant.name}');
             },
           ),
